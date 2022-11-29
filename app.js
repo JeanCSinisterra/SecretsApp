@@ -27,14 +27,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-<<<<<<< HEAD
-///////// MongoDB Connection /////////
-mongoose.connect(uri, { useNewUrlParser: true });
-
-=======
 ///////// MongoDB Connection ///////////
 mongoose.connect("mongodb://localhost:27017/userDB", { useNewUrlParser: true });
->>>>>>> 5961a294f4f6d48152cffa9aa786cea561285429
+
 const userSchema = new mongoose.Schema ({
     email: String,
     password: String
