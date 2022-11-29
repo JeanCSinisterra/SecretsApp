@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-///////// MongoDB Connection /////////
+///////// MongoDB Connection ///////////
 mongoose.connect("mongodb://localhost:27017/userDB", { useNewUrlParser: true });
 const userSchema = new mongoose.Schema ({
     email: String,
