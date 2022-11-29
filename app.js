@@ -18,9 +18,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+const SESSION_SECRET = process.env.SESSION_SECRET;
 ///////// Express Session & Passport configuration /////////
 app.use(session({
-    secret: 'keyboard cat.',
+    secret: SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }));
