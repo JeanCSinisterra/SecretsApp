@@ -9,7 +9,6 @@ const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 
 const app = express();
-const uri = "mongodb://localhost:27017/userDB";
 
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
